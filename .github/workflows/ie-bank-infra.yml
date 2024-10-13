@@ -37,7 +37,6 @@ jobs:
           path: ./main.bicep  # Adjust this path as necessary for your build output
 
   deploy-dev:
-    if: github.event_name == 'push'
     runs-on: ubuntu-latest
     needs: build
     environment:
@@ -69,7 +68,6 @@ jobs:
         deploymentName: ${{ env.USER_ALIAS }}-dev
 
   deploy-uat:
-    if: github.event_name == 'push'
     runs-on: ubuntu-latest
     needs: build
     environment:
