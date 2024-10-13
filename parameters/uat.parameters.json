@@ -6,19 +6,19 @@
             "value": "nonprod"
         },
         "postgreSQLServerName": {
-            "value": "ataboada-dbsrv-dev"
+            "value": "ataboada-dbsrv-uat"
         },
         "postgreSQLDatabaseName": {
-            "value": "ataboada-db-dev"
+            "value": "ataboada-db-uat"
         },
         "appServicePlanName": {
-            "value": "ataboada-asp-dev"
+            "value": "ataboada-asp-uat"
         },
         "appServiceAPIAppName": {
-            "value": "ataboada-be-dev"
+            "value": "ataboada-be-uat"
         },
         "appServiceAppName": {
-            "value": "ataboada-fe-dev"
+            "value": "ataboada-fe-uat"
         },
         "location": {
             "value": "North Europe"
