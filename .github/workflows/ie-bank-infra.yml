@@ -73,7 +73,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     environment:
-      name: 'ghci'
+      name: 'UAT'
 
     steps:
       - uses: actions/checkout@main
