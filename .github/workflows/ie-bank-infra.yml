@@ -61,7 +61,7 @@ jobs:
     - name: Deploy to dev
       uses: azure/arm-deploy@v2
       with:
-        scope: ${{ env.RESOURCE_GROUP_DEV }}
+        scope: resourcegroup
         subscriptionId: ${{ env.SUBSCRIPTION_ID }}
         resourceGroupName: ${{ env.RESOURCE_GROUP_DEV }}
         template: ./main.bicep
@@ -89,7 +89,7 @@ jobs:
       - name: Deploy to uat
         uses: azure/arm-deploy@v2
         with:
-          scope: ${{ env.RESOURCE_GROUP_UAT }}
+          scope: resourcegroup
           subscriptionId: ${{ env.SUBSCRIPTION_ID }}
           resourceGroupName: ${{ env.RESOURCE_GROUP_UAT }}
           template: ./main.bicep
